@@ -1,28 +1,15 @@
+{% load staticfiles %}
 <html>
 
   <head>
     <title>{{ title }}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}" />
   </head>
 
   <body>
 
-    <header>
-      <div class="container-fluid">
-        <div class="row">
-          
-          <nav class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-lg-offset-4 col-md-off-set-4 col-sm-offset-3">
-            <ul class="nav nav-pills nav-justified">
-              <li role="presentation"><a href="#">Home</a></li>
-              <li role="presentation"><a href="#">Posts</a></li>
-              <li role="presentation"><a href="#">Sobre</a></li>
-              <li role="presentation"><a href="#">Portfolio</a></li>
-            </ul>
-          </nav>
-
-        </div>
-      </div>
-    </head>
+    {% include 'header.html' %}
 
     <div class="container-fluid">
   	{% block content %}
@@ -30,6 +17,8 @@
 
   	{% endblock content %}
     </div>
+
+    {% include 'footer.html' %}
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 

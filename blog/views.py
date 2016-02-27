@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.utils import timezone
+from .models import Post, Portfolio
 
 # Create your views here.
 def home( request ):
@@ -6,7 +8,8 @@ def home( request ):
 	return render( request, 'home.html', context )
 
 def posts( request ):
-	context = { 'title' : 'Postagens'}
+	posts = Post.objects.filter().order_by('criado')
+	context = { 'title' : 'Postagens', 'posts' : posts }
 	return render( request, 'posts.html', context )
 
 def sobre( request ):

@@ -4,7 +4,7 @@ from .views import(
 	posts,
 	sobre,
 	portfolio
-	)
+)
 
 urlpatterns = [
 	url(r'^$', home),
