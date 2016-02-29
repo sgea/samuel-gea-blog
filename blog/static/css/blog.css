@@ -7,14 +7,17 @@
 
 p{ font-size: 18px; font-family: 'Titillium Web', sans-serif; text-indent: 15px; }
 
-#header{ background-color: #008ae6; }
+#footer{ background-color: #000000; color: #FFFFFF;}
 
 nav a
 {	
 	font-size: 35px;
 	font-family: 'Passion One', cursive;
+	letter-spacing: 3px;
 	color: #FFFFFF; 
 	height: 120px;
 	text-transform: uppercase; 
 	font-weight: bold; 
 }
+
+#header{ background-color: #008ae6; }

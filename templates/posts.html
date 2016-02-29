@@ -2,22 +2,25 @@
 
 {% block content %}
 <div class="row">
+  <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
 
-  <h1>Posts</h1>
+    <h1>Posts</h1>
 
-  {% for post in posts %}
+    {% for post in posts %}
 
-    <h2>{{ post.titulo }}</h2>
+      <h2><a href="{% url 'post_detalhe' id=post.id %}">{{ post.titulo }}</a></h2>
 
-    <span>Criado: {{ post.criado }}</span>
+      <span>Criado: {{ post.criado }}</span>
 
-    {% if post.atualizado %}
-      <span>Atualizado: {{ post.atualizado }}</span>
-    {% endif %}
+      {% if post.atualizado %}
+        <span>Atualizado: {{ post.atualizado }}</span>
+      {% endif %}
 
-    <p>{{ post.conteudo|linebreaks }}</p>
+      <p>{{ post.conteudo|linebreaks }}</p>
 
-  {% endfor %}
+    {% endfor %}
+
+  </div>
 </div>
 
 {% endblock content %}
