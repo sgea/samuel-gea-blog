@@ -48,9 +48,9 @@ def post_editar( request, id ):
 		if form.is_valid():
 			post = form.save( commit=False )
 			post.autor = request.user
-			post.craido = timezone.now()
+			post.criado = timezone.now()
 			post.save()
-			return redirect('posts')
+			return redirect('blog:posts')
 	else:
 		form = PostForm( instance=post )
 

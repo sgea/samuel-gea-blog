@@ -7,8 +7,6 @@
 
 p{ font-size: 18px; font-family: 'Titillium Web', sans-serif; text-indent: 15px; }
 
-#footer{ background-color: #000000; color: #FFFFFF;}
-
 nav a
 {	
 	font-size: 35px;
@@ -21,3 +19,20 @@ nav a
 }
 
 #header{ background-color: #008ae6; }
+
+#footer{ background-color: #000000; color: #FFFFFF;}
+
+#img-eu
+{
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+#logado{ position: absolute; top: 20%; right: 50px;  }
+
+.margin-10
+{
+	margin-top: 2%;
+}

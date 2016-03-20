@@ -7,9 +7,17 @@
 
       <h1 class="text-center">
         {{ post.titulo }}
-        <a class="btn btn-default" href="{% url 'post_editar' id=post.id %}">
-          <span class="glyphicon glyphicon-pencil"></span>
-        </a>
+
+        {% if user.is_authenticated %}
+
+          <a class="btn btn-default" href="{% url 'blog:editar' id=post.id %}">
+            <span class="glyphicon glyphicon-pencil"></span>
+          </a>
+
+          <p id="logado">Logado como: {{ user.username }}</p>
+
+        {% endif %}
+
       </h1>
       
       <span>{{ post.criado }}</span>
