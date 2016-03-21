@@ -1,11 +1,27 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block content %}
 
   <div class="row">
     <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
-	  <h1>Home</h1>
-	  a
+	  
+	  <h1 class="margin-top-3 text-center">Blog ~ Samuel Gea</h1>
+
+	  <p>
+	  	Sejam Bem Vindos! Nesse blog falo sobre tecnologiase frameworks. Espero que
+	  	se divirta enquanto aprende. Um grande abraço.
+	  <p/>
+
+	  <h2>Linguagens Utilizadas</h2>
+
+	  <ul class="linguagens margin-top-3">
+	  	<li><img src="{% static 'img/logo_html5.png' %}" title="Logo HTML5" alt="Logo HTML5" /></li>
+	  	<li><img src="{% static 'img/logo_java.png' %}" title="Logo Java" alt="Logo Java" /></li>
+	  	<li><img src="{% static 'img/logo_python.png' %}" title="Logo Python" alt="Logo Python" /></li>
+	  	<li><img src="{% static 'img/logo_android.png' %}" title="Logo Android" alt="Logo Android" /></li>
+	  </ul>
+
     </div>	
   </div>
 
