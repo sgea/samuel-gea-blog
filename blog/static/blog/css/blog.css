@@ -27,17 +27,26 @@ nav a
 nav a:hover
 {
 	-webkit-transition: all 600ms ease-in;
--moz-transition: all 600ms ease-in;
--ms-transition: all 600ms ease-in;
--o-transition: all 600ms ease-in;
-transition: all 600ms ease-in;
+	-moz-transition: all 600ms ease-in;
+	-ms-transition: all 600ms ease-in;
+	-o-transition: all 600ms ease-in;
+	transition: all 600ms ease-in;
 }
 
-#header{ background-color: #008ae6; }
-
-#divisoria{ height: 25px; background-color: black; }
+#divisoria{ height: 10px; background-color: black; }
 
 #logado{ position: absolute; top: 20%; right: 50px;  }
+
+#footer
+{
+	/* TODO */
+	position: fixed;
+	left:0px;
+	bottom:0px;
+	height:60px;
+	width:100%;
+	text-align: center;
+}
 
 #img-eu
 {
@@ -46,6 +55,9 @@ transition: all 600ms ease-in;
 	width: 200px;
 	height: 200px;
 }
+
+.background-azul{ background-color: #008ae6; color: #FFF; }
+.background-azul-claro{ background-color: #002640; color: #FFF; }
 
 .margin-10{	margin-top: 2%; }
 .margin-top-3{ margin-top: 3%; }
@@ -59,3 +71,19 @@ transition: all 600ms ease-in;
 
 .linguagens{ list-style-type: none; text-align: center; }
 .linguagens li{ display: inline-block; }
+
+.rodape a
+{ 
+	font-size: 26px; 
+	text-transform: capitalize; 
+	margin-right: 100px; 
+	color: #FFF;
+	text-decoration: none;
+}
+
+
+.posts{ margin-bottom: 150px; }
+.posts h2{ text-align: center; }
+
+.google-plus{ background: url('../img/googleplus.png');}
+.linkedin{}

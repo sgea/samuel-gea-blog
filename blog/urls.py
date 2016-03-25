@@ -17,5 +17,5 @@ urlpatterns = [
 	url(r'^posts/(?P<id>[0-9]+)/$', post_detalhe, name='detalhe' ),
 	url(r'^posts/(?P<id>[0-9]+)/editar/$', post_editar, name='editar' ),
 	url(r'^sobre/$', sobre, name='sobre' ),
-	url(r'^portfolio/$', portfolio, name='portfolio' )
+	url(r'^portfolio/$', portfolio.as_view(), name='portfolio' )
 ]

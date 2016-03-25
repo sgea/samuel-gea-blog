@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+
+    <h1 class="text-center">Portfolio</h1>
+
+    <table class="table table-bordered table-striped">
+
+    	<thead>
+      <tr>
+        <th>Projeto</th>
+        <th>Tecnologias</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for projeto in lista_projetos %}
+        <tr>
+          <td>{{ projeto.nome_projeto}}</td>
+          <td>{{ projeto.linguagens }}</td>
+          <td><a href="http://{{ projeto.link }}">{{ projeto.link }}</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+
+    </table>
+
+  </div>
+</div>
+
+{% endblock content %}
