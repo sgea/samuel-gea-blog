@@ -1,0 +1,70 @@
+/* 
+	Descrição: CSS para animações;
+	Autor: Samuel Antonio Gea;
+*/
+
+/* ROTACIONAR */
+.rotate:hover
+{
+	-webkit-animation: rotate 1s linear;
+	-moz-animation: rotate 1s linear;
+	-o-animation: rotate 1s linear;
+	animation: rotate 1s linear; 
+}
+
+.scale:hover
+{
+	-webkit-animation: scale 1s;
+	-moz-animation: scale 1s;
+	-o-animation: scale 1s;
+	animation: scale 1s; 
+}
+
+@-webkit-keyframes rotate
+{
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes rotate
+{
+	0% { -moz-transform: rotate(0deg); }
+	100% { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes rotate
+{
+	0% { -o-transform: rotate(0deg); }
+	100% { -o-transform: rotate(360deg); }
+}
+
+@keyframes rotate
+{
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* ZOOM-IN */
+@-webkit-keyframes scale
+{
+	0% { -webkit-transform: scale(1); }
+	100% { -webkit-transform: scale(1.5); }
+}
+
+@-moz-keyframes scale
+{
+	0% { -moz-transform: scale(1); }
+	100% { -moz-transform: scale(1.5); }
+}
+
+@-o-keyframes scale
+{
+	0% { -o-transform: scale(1); }
+	100% { -o-transform: scale(1.5); }
+}
+
+@keyframes scale
+{
+	0% { transform: scale(1); }
+	100% { transform: scale(1.5); }
+}
